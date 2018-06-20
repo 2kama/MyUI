@@ -206,7 +206,27 @@ label {
    font-weight: 500;
    padding-top: 10px;
 }
-
+table button {
+   margin-right: 20px;
+}
+button.flowInfo {
+   height: 27px;
+   font-size: 12px;
+   border-radius: 16px;
+   -webkit-border-radius: 16px;
+   color: #077DBE;
+   border: 1px solid #077DBE;
+   background: #fff;
+}
+button.flowDel {
+   height: 27px;
+   font-size: 12px;
+   border-radius: 16px;
+   -webkit-border-radius: 16px;
+   color: #fff;
+   border: none;
+   background: #CE5555;
+}
 button.flowBtn2 {
    border-radius: 16px;
    -webkit-border-radius: 16px;
