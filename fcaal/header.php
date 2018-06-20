@@ -125,9 +125,57 @@
 
 
                   <li class="list-group-item drops">
-                    <div class="purse">
-                        <i class="material-icons"></i> Project Bible
-                    </div>
+                     <div class="purse">
+                        <i class="material-icons">featured_play_list</i> Projects
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="createproject">
+                                  <span class="dot"></span> Create Project
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="addobligor">
+                                  <span class="dot"></span> Add Obligors
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="projectbible">
+                                  <span class="dot"></span> Project Bible
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
+                  <li class="list-group-item drops">
+                     <div class="purse">
+                        <i class="material-icons">business</i> Manage Organisations
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="createorganisation">
+                                  <span class="dot"></span> Create Organisation
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="organisation">
+                                  <span class="dot"></span> View Organisations
+                              </a>
+                            </li>
+
+                        </ul>
+
                   </li>
 
 
