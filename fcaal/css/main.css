@@ -71,7 +71,7 @@ html, body {
   background-color: #fff;
   float: left;
   border-radius: 50%;
-  border: 1px solid #3C9B34;
+  border: 1px solid #077DBE;
 }
 
 /* On mouse-over, add a grey background color */
@@ -81,7 +81,7 @@ html, body {
 
 /* When the checkbox is checked, add a blue background */
 .containers input:checked ~ .checkmark {
-  background-color: #3C9B34;
+  background-color: #077DBE;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -118,12 +118,13 @@ html, body {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   padding-top: 13px;
+  float: left;
 }
 
 /* Hide the browser's default radio button */
@@ -141,7 +142,7 @@ html, body {
   width: 25px;
   background-color: #fff;
   border-radius: 50%;
-  border: 1px solid #3C9B34;
+  border: 1px solid #077DBE;
   margin-top: 13px;
 }
 
@@ -174,7 +175,7 @@ html, body {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #3C9B34;
+  background: #077DBE;
 } 
 
 
@@ -498,12 +499,21 @@ table tbody td a {
    font-family: "Lato";
    font-weight: 600;
 }
+.mainPage2 {
+   color: #4372B8;
+   font-size: 15px;
+   font-family: "Lato";
+   font-weight: 600;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
 hr {
    width: 10%;
    margin-left: 45%;
    margin-right: 45%;
    color: #E8E8E8;
    margin-top: 7px;
+
 
 }
 .mainPage span {
