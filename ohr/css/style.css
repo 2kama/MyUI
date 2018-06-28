@@ -1435,6 +1435,103 @@ i.selBar.out {
 
 
 
+#list .turn-page {
+  background: #fff;
+}
+#list {
+   width: 900px;
+   height: 553px;
+   border: 1px dashed #eee;
+}
+#list ol {
+  float: left;
+  width: 100%;
+  list-style-type: none;
+}
+#list ol li {
+  float: left;
+  width: 100%;
+}
+#list a {
+   padding: 10px;
+   width: 100%;
+   font-size: 15px;
+   text-decoration: none;
+   color: #111;
+   float: left;
+}
+
+
+
+.ceremon {
+   background: rgba(0, 0, 0, 0.3);
+   padding-top: 20%;
+   padding-bottom: 10%;
+   width: 100%;
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 10%;
+   padding-right: 10%;
+   box-sizing: border-box;
+}
+.ceremon h1 {
+   color: #fff;
+   font-size: 36px;
+   font-weight: 600;
+     line-height: normal;
+  letter-spacing: 2.1px;
+}
+.ceremon h4 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+
+form.row {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+form.row label {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: #575a5d;
+  margin-top: 20px;
+}
+
+form.row button {
+  background: transparent;
+  color: #575a5d;
+  font-size: 12px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+form.row button.neddy {
+  background: #707bea;
+  color: #fff;
+  font-size: 12px;
+}
+
+
+.whitepaper {
+  background: #fff;
+  min-height: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+
+}
+
+
+
+
+
+
 
 
   @media(max-width: 991px) {
