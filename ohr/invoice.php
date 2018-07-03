@@ -81,7 +81,7 @@
     .case {
         color: #9b9b9b;
         background: #fff;
-        border: 1px solid #bac3ca;
+        border: 1px solid #ebebf2;
         
         padding: 0;
     }
@@ -94,7 +94,7 @@
 
     }
     .bottomHead {
-        border-bottom: 1px solid #bac3ca;
+        border-bottom: 1px solid #ebebf2;
     }
     .topHead, .bottomHead {
         padding: 30px;
