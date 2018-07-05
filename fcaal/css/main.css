@@ -190,8 +190,6 @@ button.flowInfo, button.flowDel, button.flowBtn2, button.flowBtn, .btn.flowInfo,
   -webkit-border-radius: 16px;
   -ms-border-radius: 16px;
   border-radius: 16px;
-  color: #077DBE;
-  color: var(--color3);
   border: none;
 }
 
@@ -218,6 +216,8 @@ button {
 }
 button.flowInfo {
   border: 1px solid #077DBE;
+  color: #077DBE;
+  color: var(--color3);
   background: #fff;
   background: var(--pure-white);
 }
@@ -231,7 +231,8 @@ button.flowBtn2 {
   color: var(--pure-white);
 }
 button.flowBtn {
-  width: 70px;
+  color: #fff;
+  color: var(--pure-white);
   background: linear-gradient(to right, #124692 0%, #40B549 100%);
 }
 
@@ -247,6 +248,8 @@ button.flowBtn {
 }
 .btn.flowInfo {
   border: 1px solid #077DBE;
+  color: #077DBE;
+  color: var(--color3);
   background: #fff;
   background: var(--pure-white);
 }
@@ -260,7 +263,8 @@ button.flowBtn {
   color: var(--pure-white);
 }
 .btn.flowBtn {
-  width: 70px;
+  color: #fff;
+  color: var(--pure-white);
   background: linear-gradient(to right, #124692 0%, #40B549 100%);
 }
 
@@ -279,6 +283,14 @@ button.flowBtn {
   -webkit-border-radius: 20px;
   -ms-border-radius: 20px;
   border-radius: 20px;
+}
+.form-control.sad {
+  color: #077DBE;
+  color: var(--color3);
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  font-weight: var(--fw_s);
 }
 
 .share {
@@ -305,6 +317,15 @@ button.flowBtn {
   font-size: 23px;
   text-align: center;
   margin-top: 8px;
+}
+
+.sam i {
+  float: right;
+  color: #077DBE;
+  color: var(--color3);
+  font-size: 23px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
 label {
@@ -563,8 +584,11 @@ ul.dropped li .dot {
   background: #fff;
   background: var(--pure-white);
   font-family: "Lato", serif;
+  color: #077DBE;
+  color: var(--color3);
 }
-.tableRow table thead th {
+.tableRow table thead co
+th {
   font-size: 15px;
   font-size: var(--fs2);
   color: #077DBE;
