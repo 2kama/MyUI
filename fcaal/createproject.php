@@ -39,10 +39,28 @@
 
 								<div class="row">
 									<div class="col-md-6">
-										<label for="">Phone numbers</label>
-										<input type="date" class="form-control"> <i class="material-icons">event</i>
+										<label for="">Bank Cut-off date</label>
+										<div class="share">
+											<input type="date" class="form-control"> <i class="material-icons">event</i>
+										</div>
+										
 									</div>
-									<div class="col-md-6"><input type="number" class="form-control"></div>
+
+									<div class="col-md-6">
+										<label for="">Date of Obligors Notification:</label>
+										<div class="share">
+											<input type="date" class="form-control"> <i class="material-icons">event</i>
+										</div>
+										
+									</div>
+
+									<div class="col-md-6">
+										<label for="">Date of Loan Purchase</label>
+										<div class="share">
+											<input type="date" class="form-control"> <i class="material-icons">event</i>
+										</div>
+										
+									</div>
 								</div>
 
 
@@ -52,6 +70,12 @@
 								</div>
 
 							</form>
+
+
+							<div class="col-md-12 taky text-center">
+								 <h4 class="col-md-12">Project name ABC has been successfully created</h4>
+								 <button class="btn flowInfo">Add Obligor</button>
+							</div>
 
 						</div>
 						

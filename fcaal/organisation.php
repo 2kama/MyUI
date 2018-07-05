@@ -72,7 +72,7 @@
 										<td>Active</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowDel">Deactivate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									<tr>
@@ -81,7 +81,7 @@
 										<td>Inactive</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowBtn2">Activate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 
@@ -91,7 +91,7 @@
 										<td>Active</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowDel">Deactivate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									<tr>
@@ -100,7 +100,7 @@
 										<td>Inactive</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowBtn2">Activate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 
@@ -110,7 +110,7 @@
 										<td>Active</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowDel">Deactivate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									<tr>
@@ -119,7 +119,7 @@
 										<td>Inactive</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowBtn2">Activate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 
@@ -129,7 +129,7 @@
 										<td>Active</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowDel">Deactivate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									<tr>
@@ -138,7 +138,7 @@
 										<td>Inactive</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowBtn2">Activate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 
@@ -148,7 +148,7 @@
 										<td>Active</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowDel">Deactivate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									<tr>
@@ -157,7 +157,7 @@
 										<td>Inactive</td>
 										<td>
 											<button class="btn flowInfo">View/Update</button>
-											<button class="btn flowBtn2">Activate</button>
+											<button class="btn flowBtn2">Projects</button>
 										</td>
 									</tr>
 									

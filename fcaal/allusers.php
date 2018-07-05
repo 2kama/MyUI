@@ -162,7 +162,7 @@
 
 
 
-					<nav aria-label="Page navigation example">
+					<nav aria-label="Page navigation example" class="no-nav">
 						  <ul class="pagination justify-content-end">
 						    <li class="page-item"> <a class="page-link" href="#">&lt;</a></li>
 						    <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -184,14 +184,6 @@
 						    
 						  </ul>
 						</nav>
-
-
-
-
-
-
-
-
 
 
 

@@ -37,7 +37,15 @@
 								<label for="">Description:</label>
 								<textarea name="" id="" cols="30" rows="10" style="height: 200px;" class="form-control"></textarea>
 
+								<label for="">Contact name:</label>
+								<input type="text" class="form-control">
 
+								<label for="">Contact Email:</label>
+								<input type="email" class="form-control">
+
+								<label for="">Address:</label>
+								<input type="text" class="form-control">
+								 
 								<div class="row">
 									<button class="btn col-md-3 offset-md-9">Save</button>
 								</div>

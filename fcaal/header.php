@@ -144,7 +144,7 @@
                             </li>
 
                             <li>
-                              <a href="projectbible">
+                              <a href="allprojects">
                                   <span class="dot"></span> Project Bible
                               </a>
                             </li>
