@@ -34,12 +34,76 @@
 								<label for="">Name:</label>
 								<input type="text" class="form-control">
 
-								<label for="">Email Address:</label>
+								<label for="">Add Permissions below:</label>
+
+								<div class="col-md-12 taky" style="margin-top: 5px;">
+										<div class="row">
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Obligor management
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;DRA management
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Proposals
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Recovery Monitoring
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Collateral Management
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Reports
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Legal
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+											 <div class="col-md-4">
+											 		<label class="containers">&emsp;Accounts
+														<input type="checkbox">
+														<span class="checkmark"></span>
+													</label>
+											 </div>
+
+										</div>
+									</div>
 								
 
 
 								<div class="row">
-									<button class="btn col-md-3 offset-md-9">Add User</button>
+									<button class="btn col-md-3 offset-md-9">Save Role</button>
+
+									
 								</div>
 
 							</form>

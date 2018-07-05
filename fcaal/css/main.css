@@ -65,6 +65,7 @@ html, body {
   float: left;
   border-radius: 50%;
   border: 1px solid #077DBE;
+  margin-top: 10px;
 }
 
 /* On mouse-over, add a grey background color */
