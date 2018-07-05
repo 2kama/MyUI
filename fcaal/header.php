@@ -62,10 +62,30 @@
 
 
 
-                  <li class="list-group-item">
+                  <li class="list-group-item drops">
                     <div class="purse">
-                       <a href=""><i class="fa fa-user"></i> Obligors </a>
+                       <i class="fa fa-user"></i> Obligors 
                     </div>
+
+                    <ul class="dropped">
+                        <li>
+                           <a href="addobligor">
+                              <span class="dot"></span> Create Obligors
+                           </a>
+                        </li>
+
+                        <li>
+                            <a href="obligors">
+                               <span class="dot"></span> View all Obligors
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="assignobligor">
+                               <span class="dot"></span> Assign Obligors
+                            </a>
+                        </li>
+                    </ul>
                   </li>
 
 

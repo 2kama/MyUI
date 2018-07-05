@@ -10,7 +10,7 @@
 
 						<div class="col-md-12 pageHead">
 							<div class="topic">
-								<i class="fa fa-user"></i> Obligors 
+								<i class="fa fa-user"></i> Manage Obligors 
 							</div>
 						</div>
 

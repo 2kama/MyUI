@@ -582,8 +582,7 @@ ul.dropped li .dot {
 }
 .tableRow table thead {
   border-bottom: 3px solid #077DBE;
-  background: #fff;
-  background: var(--pure-white);
+  background: transparent;
   font-family: "Lato", serif;
   color: #077DBE;
   color: var(--color3);

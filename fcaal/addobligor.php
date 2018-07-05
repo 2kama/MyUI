@@ -22,7 +22,7 @@
 
 						<div class="col-md-12 pageHead">
 							<div class="topic">
-								<i class="material-icons">branding_watermark</i> Manage Projects
+								<i class="fa fa-user"></i> Manage Obligors
 							</div>
 						</div>
 
