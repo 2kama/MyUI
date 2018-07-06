@@ -355,6 +355,28 @@ form button {
   height: 36px;
 }
 
+a.btn.btnGreen, a.btn.btnGreenInverse {
+  background: #05923E;
+  background: var(--formBtncolor);
+  color: #fff;
+  color: var(--pure-white);
+  font-size: 14px;
+  font-size: var(--fs1);
+  -webkit-border-radius: 18px;
+  -ms-border-radius: 18px;
+  border-radius: 18px;
+  font-family: "Lato";
+  margin-top: 30px;
+  height: 36px;
+}
+
+a.btn.btnGreenInverse {
+  background: #fff;
+  background: var(--pure-white);
+  color: #05923E;
+  color: var(--formBtncolor);
+}
+
 .menuTab {
   background: #021F4A;
   background: var(--color4);
@@ -750,6 +772,128 @@ h6.companyName {
   font-weight: 600;
   font-weight: var(--fw_l);
   margin-bottom: 10px;
+}
+
+.blueTop {
+  background: rgba(16, 155, 248, 0.07);
+  padding: 50px;
+  font-size: 15px;
+  font-size: var(--fs2);
+  font-family: "Lato";
+}
+.blueTop .col-md-10 {
+  font-size: 18px;
+  font-weight: 600;
+  font-weight: var(--fw_l);
+  margin-bottom: 7px;
+}
+.blueTop .col-md-2 {
+  color: #077DBE;
+  color: var(--color3);
+}
+.blueTop .col-md-6 {
+  color: #AAAAAA;
+}
+.blueTop .col-md-4 {
+  font-weight: 600;
+  font-weight: var(--fw_l);
+}
+
+.mishTab {
+  margin-top: 30px;
+}
+.mishTab .list-group {
+  flex-direction: row;
+  font-size: 15px;
+  font-size: var(--fs2);
+}
+.mishTab .list-group a {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  color: #d2d2d2;
+}
+.mishTab .list-group a.active {
+  border-bottom: 4px solid #109BF8;
+  color: #000;
+  font-weight: 600;
+  font-weight: var(--fw_l);
+}
+
+.handHead {
+  color: #fff;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.handBody {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.handBody .smallBody {
+  font-size: 13px;
+  width: 100%;
+  margin: 0;
+}
+.handBody .smallBody select {
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+  color: #ccc;
+}
+.handBody .bigBody {
+  font-size: 18px;
+  width: 100%;
+  margin: 0;
+}
+
+.royalBlue .handHead {
+  background: #4372B8;
+}
+.royalBlue .handBody {
+  border: 1px solid #4372B8;
+}
+
+.sky .handHead {
+  background: #109BF8;
+}
+.sky .handBody {
+  border: 1px solid #109BF8;
+}
+
+.orange .handHead {
+  background: #FFA200;
+}
+.orange .handBody {
+  border: 1px solid #FFA200;
+}
+.orange button {
+  background: #FFA200;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.superGreen .handHead {
+  background: #40B549;
+}
+.superGreen .handBody {
+  border: 1px solid #40B549;
+  text-align: left;
+}
+.superGreen .handBody p {
+  border-left: 2px solid #40B549;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.water .handHead {
+  background: #60D4C4;
+}
+.water .handBody {
+  border: 1px solid #60D4C4;
 }
 
 @media screen and (max-width: 768px) {
