@@ -896,6 +896,42 @@ h6.companyName {
   border: 1px solid #60D4C4;
 }
 
+.indexFlood {
+  height: 30vh;
+}
+
+.login {
+  margin-top: -20vh;
+}
+.login .col-md-4 {
+  padding: 0;
+}
+.login .col-md-4 h3 {
+  color: #fff;
+  color: var(--pure-white);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.login .col-md-4 form {
+  background: #fff;
+  background: var(--pure-white);
+  padding: 40px 35px;
+}
+.login .col-md-4 form button {
+  background: linear-gradient(to right, #124692 0%, #40B549 100%);
+}
+.login .col-md-4 form p {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+.login .col-md-4 form p a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 12px;
+}
+
 @media screen and (max-width: 768px) {
   .menuTab {
     margin-left: -100%;

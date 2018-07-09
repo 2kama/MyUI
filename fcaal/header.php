@@ -135,14 +135,6 @@
 
 
 
-                  <li class="list-group-item drops">
-                    <div class="purse">
-                        <i class="material-icons">mail</i> Messsages
-                    </div>
-                  </li>
-
-
-
 
                   <li class="list-group-item drops">
                      <div class="purse">
@@ -253,6 +245,18 @@
                         </ul>
 
                   </li>
+
+
+
+                  
+
+                  <li class="list-group-item drops">
+                    <div class="purse">
+                        <i class="material-icons">mail</i> Messsages
+                    </div>
+                  </li>
+
+
 
 
                 
