@@ -1529,6 +1529,36 @@ form.row button.neddy {
 
 
 
+.dental #list-tab {
+  flex-direction: row;
+}
+
+.dental #list-tab a {
+   width: auto;
+   background: transparent;
+   font-size: 14px;
+   color: #9b9b9b;
+   margin-right: 30px;
+   border: none;
+}
+
+.dental #list-tab a:hover, .dental #list-tab a.active {
+   color: #707bea;
+   border-bottom: 3px solid #707bea;
+}
+
+
+.dental #list-tab a i {
+  float: left;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.dental .tab-content {
+  padding: 50px 0px;
+}
+
+
 
 
 
