@@ -94,6 +94,31 @@
 
                   <li class="list-group-item drops">
                      <div class="purse">
+                        <i class="fa fa-percent"></i> Proposals
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="proposals">
+                                  <span class="dot"></span> Proposals
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="analyzeproposals">
+                                  <span class="dot"></span> Analyze Proposals
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
+                  <li class="list-group-item drops">
+                     <div class="purse">
                         <i class="material-icons">group</i> DRAs
                      </div>
   
@@ -132,6 +157,14 @@
                     
                   </li>
 
+
+
+
+                  <li class="list-group-item drops">
+                    <div class="purse">
+                        <i class="material-icons">mail</i> Messsages
+                    </div>
+                  </li>
 
 
 
@@ -245,18 +278,6 @@
                         </ul>
 
                   </li>
-
-
-
-                  
-
-                  <li class="list-group-item drops">
-                    <div class="purse">
-                        <i class="material-icons">mail</i> Messsages
-                    </div>
-                  </li>
-
-
 
 
                 

@@ -97,11 +97,11 @@
                         <div class="col-12">
                             <div class="list-group" id="list-tab" role="tablist">
                             <a class="list-group-item list-group-item-action active" id="list-loan-list" data-toggle="list" href="#list-loan" role="tab" aria-controls="loan">Loan Details</a>
-                            <a class="list-group-item list-group-item-action" id="list-bank-list" data-toggle="list" href="#list-bank" role="tab" aria-controls="bank">Bank Statement</a>
-                            <a class="list-group-item list-group-item-action" id="list-correspond-list" data-toggle="list" href="#list-correspond" role="tab" aria-controls="correspond">Correspondence</a>
                             <a class="list-group-item list-group-item-action" id="list-collateral-list" data-toggle="list" href="#list-collateral" role="tab" aria-controls="collateral">Collateral</a>
+                            <a class="list-group-item list-group-item-action" id="list-addition-list" data-toggle="list" href="#list-addition" role="tab" aria-controls="addition">Credit History</a>
+                            <a class="list-group-item list-group-item-action" id="list-bank-list" data-toggle="list" href="#list-bank" role="tab" aria-controls="bank">Bank Statement</a>
                             <a class="list-group-item list-group-item-action" id="list-docu-list" data-toggle="list" href="#list-docu" role="tab" aria-controls="docu">Documents</a>
-                            <a class="list-group-item list-group-item-action" id="list-addition-list" data-toggle="list" href="#list-addition" role="tab" aria-controls="addition">Additional remarks</a>
+                            <a class="list-group-item list-group-item-action" id="list-correspond-list" data-toggle="list" href="#list-correspond" role="tab" aria-controls="correspond">Correspondence</a>
                             </div>
                         </div>
                         <div class="col-12">
@@ -200,49 +200,155 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane fade" id="list-bank" role="tabpanel" aria-labelledby="list-bank-list">...</div>
-                            <div class="tab-pane fade" id="list-correspond" role="tabpanel" aria-labelledby="list-correspond-list">...</div>
 
                             <div class="tab-pane fade" id="list-collateral" role="tabpanel" aria-labelledby="list-collateral-list">
 
-                                 <div class="row">
-                                     <div class="col-md-12 superGreen">
-                                        <div class="handHead">Collateral/Security Details</div>
-                                        <div class="handBody">
-                                            <p class="smallBody">Legal Mortgage over proeprty located at plot 1760 jimmy carter street asokoro, abuja c of o FCT/ABU/PL/323 valued at 975M FSV.</p>
-                                            <p class="smallBody">LM over property located at plot 909 cadesr=tral zone AO3 Aguta close area 11 Garki Abuja covered with c of o No. FCT/ABU/CR-586 valued at N675M FSV.</p>
-                                            
+                                <div class="row">
+                                    <div class="col-md-12 superGreen">
+                                    <div class="handHead">Collateral/Security Details</div>
+                                    <div class="handBody">
+                                        <p class="smallBody">Legal Mortgage over proeprty located at plot 1760 jimmy carter street asokoro, abuja c of o FCT/ABU/PL/323 valued at 975M FSV.</p>
+                                        <p class="smallBody">LM over property located at plot 909 cadesr=tral zone AO3 Aguta close area 11 Garki Abuja covered with c of o No. FCT/ABU/CR-586 valued at N675M FSV.</p>
+                                        
+                                        
+                                        <div class="row">
+                                            <div class="col-md-4 water text-center">
+                                                <div class="handHead">Open Market Value of Security</div>
+                                                <div class="handBody">
+                                                    <p class="bigBody">₦ 5,997,765,375.00</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 water text-center">
+                                                <div class="handHead">Forced Sale Value of Security</div>
+                                                <div class="handBody">
+                                                    <p class="bigBody">₦ 3,685,000,000.00</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 water text-center">
+                                                <div class="handHead">Current Status of Collateral</div>
+                                                <div class="handBody">
+                                                    <p class="bigBody">A</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                     </div>
-                                 </div>
+                                        </div>
+                                    </div>
 
-                                 <div class="row">
-                                     <div class="col-md-4 water">
-                                         <div class="handHead">Open Market Value of Security</div>
-                                         <div class="handBody">
-                                             <p class="bigBody">₦ 5,997,765,375.00</p>
-                                         </div>
-                                     </div>
 
-                                     <div class="col-md-4 water">
-                                         <div class="handHead">Forced Sale Value of Security</div>
-                                         <div class="handBody">
-                                             <p class="bigBody">₦ 3,685,000,000.00</p>
-                                         </div>
-                                     </div>
 
-                                     <div class="col-md-4 water">
-                                         <div class="handHead">Current Status of Collateral</div>
-                                         <div class="handBody">
-                                             <p class="bigBody">A</p>
-                                         </div>
-                                     </div>
-                                 </div>
+
+
+                                </div>
+
+
+                                <div class="row">
+
+                                        <label for="">Valuation report</label>
+                                        <div class="col-md-12 text-center bg-white" style="padding:20px;border:1px solid #d2d2d2;">
+                                            No data entry
+                                        </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <label for="">Image thumbnails</label>
+                                    <div class="col-md-12" style="padding:15px;">
+                                        <img src="..." alt="..." class="img-thumbnail" style="width:60px;height:60px;"> 
+                                        <img src="..." alt="..." class="img-thumbnail" style="width:60px;height:60px;"> 
+                                        <img src="..." alt="..." class="img-thumbnail" style="width:60px;height:60px;"> 
+                                        <img src="..." alt="..." class="img-thumbnail" style="width:60px;height:60px;"> 
+                                        <img src="..." alt="..." class="img-thumbnail" style="width:60px;height:60px;">                                                                                                                                                                                                                                                                                                                                                                4
+                                    </div>
+                                </div>
+                                
 
                             </div>
 
+                            <div class="tab-pane fade" id="list-addition" role="tabpanel" aria-labelledby="list-addition-list">
+
+                                    <div class="row neddy">
+
+                                            <div class="col-md-6">
+                                                <div class="row" style="margin-top:50px;">
+                                                    <div class="col-md-4">
+                                                        <label for="">Loan Organisation</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="margin-bottom:20px;" class="form-control">
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="">Loan Organisation</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="margin-bottom:20px;" class="form-control">
+                                                    </div>
+
+                                                    <div class="col-md-4">
+                                                        <label for="">Loan Organisation</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <input type="text" style="margin-bottom:20px;" class="form-control">
+                                                    </div>
+
+
+                                                    <div class="col-md-4">
+                                                        <label for="">Loan Organisation</label>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <textarea class="form-control" style="height: 120px;"></textarea>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                    </div>
+
+                            </div>
+
+                            <div class="tab-pane fade" id="list-bank" role="tabpanel" aria-labelledby="list-bank-list">
+                                <div class="row" style="padding: 20px;">
+                                
+                                        <div class="enough">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="bg-white">Actual Cash Inflow</td>
+                                                        <td class="bg-secondary">₦1,227,205.86</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-white">Actual Cash Outflow</td>
+                                                        <td class="bg-secondary">₦44,955,944.04</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-white">Unpaid Principal</td>
+                                                        <td class="bg-secondary"> - ₦16,465,331.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-white">Interest</td>
+                                                        <td class="bg-secondary"> - ₦69,465,331.50</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-white">Penal Charges</td>
+                                                        <td class="bg-secondary">  - ₦126,039.11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="bg-primary">Total Balance as per Bank statement &emsp; &emsp; &emsp; &emsp;</td>
+                                                        <td class="bg-secondary">  - ₦23,408,220.71</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                
+                                </div>
+                            </div>
+
                             <div class="tab-pane fade" id="list-docu" role="tabpanel" aria-labelledby="list-docu-list">...</div>
-                            <div class="tab-pane fade" id="list-addition" role="tabpanel" aria-labelledby="list-addition-list">...</div>
+
+                            <div class="tab-pane fade" id="list-correspond" role="tabpanel" aria-labelledby="list-correspond-list">...</div>
+                            
                             </div>
                         </div>
                     </div>
