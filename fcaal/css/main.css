@@ -781,6 +781,35 @@ h6.companyName {
 .water .handBody {
   border: 1px solid #60D4C4; }
 
+.login {
+  margin-top: -20vh; }
+
+.indexFlood {
+  height: 30vh; }
+
+.login .col-md-4 {
+  padding: 0; }
+  .login .col-md-4 h3 {
+    color: #fff;
+    color: var(--pure-white);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px; }
+  .login .col-md-4 form {
+    background: #fff;
+    background: var(--pure-white);
+    padding: 40px 35px; }
+    .login .col-md-4 form button {
+      background: linear-gradient(to right, #124692 0%, #40B549 100%); }
+    .login .col-md-4 form p {
+      width: 100%;
+      text-align: center;
+      margin-top: 15px; }
+      .login .col-md-4 form p a {
+        text-decoration: none;
+        color: #bbb;
+        font-size: 12px; }
+
 .draTab .col-md-4 .list-group a {
   background: transparent;
   border: none;
@@ -853,6 +882,12 @@ h6.companyName {
 .neddy .form-control {
   background: transparent;
   border: 1px solid #d2d2d2; }
+
+label.main {
+  color: #077DBE;
+  color: var(--color3);
+  font-size: 16px;
+  padding-top: 20px; }
 
 .comments {
   margin-top: 50px; }
