@@ -1,0 +1,1474 @@
+
+ @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../iconfont/MaterialIcons-Regular.eot);
+   /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'), url(../iconfont/MaterialIcons-Regular.woff) format('woff'), url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+   /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+   /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+   /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+   /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+
+html, body {
+ overflow-x: hidden;
+}
+
+
+
+/** checkbox **/
+
+.containers {
+ display: block;
+ position: relative;
+ padding-left: 18px;
+ cursor: pointer;
+ font-size: 12px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ float: left;
+ font-weight: 500;
+}
+
+/* Hide the browser's default checkbox */
+.containers input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ float: left;
+}
+
+/* Create a custom checkbox */
+.containers .checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 16px;
+ width: 16px;
+ background-color: #fff;
+ float: left;
+ border-radius: 50%;
+ border: 1px solid #077DBE;
+ margin-top: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+.containers:hover input ~ .checkmark {
+ background-color: #fff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containers input:checked ~ .checkmark {
+ background-color: #077DBE;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.containers .checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.containers input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.containers .checkmark:after {
+ left: 3px;
+ top: 0px;
+ width: 7px;
+ height: 12px;
+ border: solid white;
+ border-width: 0 2px 2px 0;
+ -webkit-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+}
+
+
+
+/* Customize the label (the container) */
+.containerss {
+ display: block;
+ position: relative;
+ padding-left: 35px;
+ margin-bottom: 12px;
+ cursor: pointer;
+ font-size: 14px;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+ padding-top: 13px;
+ float: left;
+}
+
+/* Hide the browser's default radio button */
+.containerss input {
+ position: absolute;
+ opacity: 0;
+}
+
+/* Create a custom radio button */
+.containerss .checkmark {
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 25px;
+ width: 25px;
+ background-color: #fff;
+ border-radius: 50%;
+ border: 1px solid #077DBE;
+ margin-top: 13px;
+}
+
+/* On mouse-over, add a grey background color */
+.containerss:hover input ~ .checkmark {
+ background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerss input:checked ~ .checkmark {
+ background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.containerss .checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerss input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerss .checkmark:after {
+ top: 5px;
+ left: 5px;
+ width: 13px;
+ height: 13px;
+ border-radius: 50%;
+ background: #077DBE;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//variables
+
+$vars: (
+    color1: #124692,
+    color2: #00B200,
+    color3: #077DBE,
+    color4: #021F4A,
+    formBtncolor: #05923E,
+    fw_l: 600,
+    fw_s: 500,
+    fs1: 14px,
+    fs2: 15px,
+    fs3: 16px,
+    fc: #000,
+    pure-white: #fff
+
+);
+
+@mixin var($property, $variable) {
+    #{$property}: map-get($vars, $variable);
+    #{$property}: var(--#{$variable});
+}
+
+:root {
+    @each $property, $value in $vars {
+        --#{$property}: #{$value};
+    }
+}
+
+
+
+//mixin
+
+@mixin mQ($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+@mixin crossBrowser($tweak, $property) {
+    -webkit-#{$tweak}: $property;
+        -ms-#{$tweak}: $property;
+            #{$tweak}: $property;
+}
+
+@mixin button {
+    @include crossBrowser(border-radius, 20px);
+    @include var(color, pure-white);
+    @include var(font-size, fs1);
+    height: 40px;
+}
+
+@mixin h4 {
+    font-size: 35px;
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+@mixin square ($size) {
+    height: $size;
+    width: $size;
+}
+
+@mixin btnTypes {
+    &.flowInfo {
+        @extend %btns;
+        border: 1px solid #077DBE;
+        @include var(color, color3);
+        @include var(background, pure-white);
+    }
+    &.flowDel {
+        @extend %btns;
+        background: #ce5555;
+    }
+    &.flowBtn2 {
+        @extend %btns;
+        @include var(background, color3);
+        @include var(color, pure-white);
+        &.second {
+            background: #60d4c4;
+        }
+    }
+    &.flowBtn {
+        @extend %btns;
+        
+        @include var(color, pure-white);
+        background: linear-gradient(to right, #124692 0%, #40B549 100%);
+    }
+    &.goback {
+        border: 1px solid #077DBE;
+        background: #fff;
+        @include var(color, color3);
+        float: right;
+    }
+}
+
+%btns {
+        height: 27px;
+        font-size: 12px;
+        @include crossBrowser(border-radius, 16px);
+        
+        border: none;
+}
+%protect {
+    padding: 0;
+    min-height: 100vh;
+ }
+
+
+ .custom-file-control:before {
+    content: "Browse";
+    padding: 7px 20px;
+    background: #077DBE;
+    color: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.custom-file-control:empty::after {
+    content: "Choose a file...";
+    color: #ccc;
+    font-weight: thin;
+    border: 1px solid #ebebf2;
+    width: 70%;
+    padding: 7px 20px;
+    float: left;
+    border-left: none;
+    background: #fff;
+    margin-left: -5px;
+    margin-top: -1px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+//css
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    @include var(color, fc);
+}
+
+button {
+    @include button;
+    @include btnTypes;
+    
+}
+
+.btn {
+    @include button;
+    @include btnTypes;
+}
+
+.form-control {
+   border: 1px solid #E8E8E8;
+   box-shadow: none;
+   @include var(font-size, fs1);
+   color: rgba(0, 0, 0, 0.29);
+   height: 40px;
+   &:focus {
+       box-shadow: none;
+   }
+   &.curve {
+       @include crossBrowser(border-radius, 20px);
+   }
+   &.sad {
+       @include var(color, color3);
+       border: none;
+       background: transparent;
+       @include var(font-weight, fw_s);
+   }
+}
+select.form-control {
+    box-shadow: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.share {
+    border: 1px solid #E8E8E8;
+   box-shadow: none;
+   @include var(font-size, fs1);
+   color: rgba(0, 0, 0, 0.29);
+   height: 40px;
+   @include var(background, pure-white);
+   .form-control {
+       border: none;
+       width: 85%;
+       background: transparent;
+       float:left;
+   }
+   i {
+       float: left;
+       @include var(color, color3);
+       width: 15%;
+       font-size: 23px;
+       text-align: center;
+       margin-top: 8px;
+   }
+}
+
+.sam {
+    i {
+        float: right;
+           @include var(color, color3);
+           font-size: 23px;
+           margin-top: 8px;
+           cursor: pointer;
+    
+    }
+}
+
+
+label {
+    @include var(font-size, fs1);
+    @include var(color, fc);
+    font-family: "Lato", serif;
+    @include var(font-weight, fw_s);
+    padding-top: 10px;
+
+    sub {
+        color: #bbb;
+        font-size: 12px;
+        float: right;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+ }
+
+
+
+ form {
+     button {
+         @include var(background, formBtncolor);
+         @include var(color, pure-white);
+         @include var(font-size, fs1);
+         @include crossBrowser(border-radius, 18px);
+         font-family: "Lato";
+         margin-top: 60px;
+         height: 36px;
+         &.flowDel {
+            @extend %btns;
+            background: #ce5555;
+        }
+        &.success {
+            @extend %btns;
+            background: green;
+        }
+     }
+    
+ }
+
+
+ a.btn.btnGreen {
+    @include var(background, formBtncolor);
+    @include var(color, pure-white);
+    @include var(font-size, fs1);
+    @include crossBrowser(border-radius, 18px);
+    font-family: "Lato";
+    margin-top: 30px;
+    height: 36px;
+ }
+ a.btn.btnGreenInverse {
+     @extend .btnGreen;
+     @include var(background, pure-white);
+     @include var(color, formBtncolor);
+ }
+
+
+
+ .container-fluid {
+     &.mainMap {
+         @extend %protect;
+     }
+ }
+
+ .row {
+     &.mainRow {
+         @extend %protect;
+     }
+ }
+ .menuTab {
+     overflow-y: auto;
+    @include crossBrowser(transition, all 0.5s ease-out);
+     padding: 0px;
+     height: 100%;
+     @include var(background, color4);
+     z-index: 20;
+ }
+ .mainBody {
+     @extend %protect;
+     padding-bottom: 70px;
+     z-index: 10;
+ }
+
+
+
+ nav {
+     height: 70px;
+     @include var(background, pure-white);
+     &.navbar.mishtab2 {
+        box-shadow: 0 0 3px rgba(53, 53, 53, 0.2);
+        background: linear-gradient(to right, #124692 0%, #40B549 100%);
+        padding-right: 3%;
+        .navbar-nav {
+            li {
+                @include var(color, pure-white);
+                font-size: 13px;
+                a {
+                    @include var(color, pure-white);
+                    &:hover {
+                        @include var(color, pure-white);
+                    }
+                    &.active {
+                        @include var(color, pure-white);
+                    }
+                    i {
+                        @include var(font-size, fs2);
+                    }
+                }
+            }
+        }
+     }
+ }
+
+
+
+ %search {
+    background: transparent;
+     border: none;
+     @include var(color, pure-white);
+ }
+ .search {
+     @extend %search;
+     @include var(font-size, fs1);
+     &:focus {
+         @extend %search;
+         box-shadow: none;
+
+     }
+     &::placeholder {
+        @include var(color, pure-white);
+        opacity: 0.5;
+     }
+ }
+
+
+
+ @mixin ulHover {
+    background: rgba(0, 24, 59, 1);
+    .purse {
+        border-left: 5px solid rgba(0, 178, 0, 1);
+        color: rgba(0, 178, 0, 1);
+        padding-left: 15px;
+    }
+ }
+ %openEnd {
+    float: right;
+    margin-right: 0px;
+    font-size: 10px;
+    margin-top: 6px;
+ }
+
+ ul {
+     &.menuList {
+         overflow-y: auto;
+         margin-top: 70px;
+         @include crossBrowser(border-radius, 0px);
+         li {
+            background: rgba(39, 61, 122, 0.14);
+            cursor: pointer;
+            padding: 0px;
+            .purse {
+                width: 100%;
+                height: 53px;
+                @include var(font-size, fs2);
+                @include var(color, pure-white);
+                padding: 12px 20px 12px 20px;
+                a {
+                    @include var(color, pure-white);
+                    text-decoration: none;
+                    width: 100%;
+                }
+                i {
+                    font-size: 17px;
+                    margin-right: 15px;
+                    margin-top: 4px;
+                    float: left;
+                    &.open {
+                        @extend %openEnd;
+                    }
+                    &.end {
+                        @extend %openEnd;
+                        display: none;
+                    }
+                }
+            }
+            &:hover {
+                @include ulHover;
+            }
+            &.active {
+                @include ulHover;
+            }
+         }
+     }
+ }
+
+
+ul {
+    &.dropped {
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 50px;
+        list-style-type: none;
+        overflow: hidden;
+        height: 0px;
+        li {
+            margin-bottom: 10px;
+            background: transparent;
+            a {
+                @include var(font-size, fs1);
+                font-style: italic;
+                color: rgba(170, 170, 170, 1);
+                text-decoration: none;
+            }
+            &:hover {
+                a {
+                    @include var(color, color2);
+                }
+                .dot {
+                    @include var(background, color2);
+                    border: none;
+                }
+            }
+            &.active {
+                a {
+                    @include var(color, color2);
+                }
+                .dot {
+                    @include var(background, color2);
+                    border: none;
+                }
+            }
+            .dot {
+                float: left;
+                width: 9px;
+                height: 9px;
+                @include crossBrowser(border-radius, 50%);
+                background: transparent;
+                border: 1px solid rgba(170, 170, 170, 1);
+                margin-right: 14px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+
+.base {
+   width: 100%;
+   padding-left: 30px;
+   img {
+       width: 110px;
+   }
+   h6 {
+    color: rgba(255, 117, 56, 1);
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 100%;
+   }
+}
+
+
+
+
+
+
+.calendar {
+   @include var(font-size, fs1);
+   @include var(color, fc);
+   text-align: right;
+   font-style: italic;
+   @include var(font-weight, fw_s);
+   padding-top: 7px;
+   font-family: "Lato", serif;
+}
+
+.pageHead {
+    padding: 0px;
+   border-bottom: 1px solid #E8E8E8;
+   .topic {
+        float: left;
+        @include var(font-size, fs3);
+        @include var(color, color3);
+        padding: 0px 15px 10px 15px;
+        border-bottom: 4px solid #109BF8;
+        i {
+            @include var(color, color3);
+            font-size: 19px;
+            margin-right: 14px;
+        }
+   }
+}
+
+
+
+.tableRow {
+    width: 100%;
+    overflow-x: auto;
+
+
+    table {
+        button {
+            margin-right: 20px;
+        }
+        thead {
+            border-bottom: 3px solid #077DBE;
+           background: transparent;
+            font-family: "Lato", serif;
+            @include var(color, color3);
+            co
+            th {
+                @include var(font-size, fs2);
+                @include var(color, color3);
+            }
+        }
+        tbody {
+            td {
+                @include var(font-size, fs1);
+                @include var(color, fc);
+                font-weight: 200;
+                a {
+                    @include var(font-weight, fw_s);
+                     @include var(color, color3);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+.first {
+    margin-top: 90px;
+}
+
+
+.mainPage {
+    color: #4372B8;
+    @include var(font-size, fs3);
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Lato";
+    @include var(font-weight, fw_l);
+    span {
+        @include var(color, fc);
+    }
+ }
+ .mainPage2 {
+    color: #4372B8;
+    @include var(font-size, fs2);
+    font-family: "Lato";
+    @include var(font-weight, fw_l);
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ hr {
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    color: #E8E8E8;
+    margin-top: 7px;
+ }
+
+nav.no-nav {
+    background: transparent;
+}
+ ul {
+     &.pagination {
+         li {
+             @include square(30px);
+             margin-right: 10px;
+             a {
+                 @include square(100%);
+                 text-align: center;
+                 font-size: 12px;
+                 box-sizing: border-box;
+                 padding-left: 10px;
+                 color: rgba(74, 74, 74, 0.6);
+                 border: 1px solid #85AEEC;
+                 @include crossBrowser(border-radius, 3px);
+
+                
+             }
+             &:hover {
+                 a {
+                    background: #85AEEC !important;
+                    @include var(color, pure-white);
+                    border: none;
+                 }
+                
+            }
+            &.active {
+                a {
+                    background: #85AEEC !important;
+                    @include var(color, pure-white);
+                    border: none;
+                }
+                
+            }
+             select {
+                height: 30px !important;
+                width: 60px;
+                padding: 0;
+                border: 1px solid #85AEEC;
+                color: rgba(74, 74, 74, 0.6);
+                font-size: 12px;
+                @include crossBrowser(border-radius, 3px);
+             }
+
+             
+         }
+     }
+ }
+
+
+ h6 {
+    &.companyName {
+        @include var(font-size, fs3);
+        @include var(font-weight, fw_l);
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+        float: left;
+    }
+
+}
+
+.detail {
+    font-weight: thin;
+    font-size: 14px;
+    .col-md-10 {
+        @include var(font-weight, fw_l);
+    }
+}
+
+.projectBody {
+    margin-top: 50px;
+    .col-md-3 {
+        @include var(background, color3);
+        @include var(color, pure-white);
+        text-align: center;
+        padding: 15px 0;
+    }
+    table {
+        @include var(background, pure-white);
+        border: 1px solid #71ADDB;
+        padding: 7px;
+        thead {
+            border: none;
+        }
+        tr {
+            border-bottom: 1px solid #71ADDB;
+        }
+    }
+}
+
+
+.taky {
+    border: 1px solid #bcbcbc;
+    @include var(background, pure-white);
+    padding: 20px;
+    margin-top: 50px;
+    h4 {
+        @include var(font-size, fs3);
+        @include var(font-weight, fw_l);
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+.blueTop {
+    background: rgba(16, 155, 248, 0.07);
+    padding: 50px;
+    @include var(font-size, fs2);
+    font-family: "Lato";
+
+    .col-md-10 {
+        font-size: 18px;
+        @include var(font-weight, fw_l);
+        margin-bottom: 7px;
+    }
+    .col-md-2 {
+        @include var(color, color3);
+    }
+    .col-md-6 {
+        color: #AAAAAA;
+    }
+    .col-md-4 {
+        @include var(font-weight, fw_l);
+    }
+}
+
+
+.mishTab {
+    margin-top: 30px;
+    .list-group {
+        flex-direction: row;
+        @include var(font-size, fs2);
+        a {
+            background: transparent;
+            border:none;
+            border-bottom: 1px solid #d2d2d2;
+            color: #d2d2d2;
+            &.active {
+                border-bottom: 4px solid #109BF8;
+                color: #000;
+                @include var(font-weight, fw_l);
+            }
+        }
+    }
+}
+
+
+
+.handHead {
+    color: #fff;
+    width: auto;
+    padding: 5px 15px;
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+.handBody {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    .smallBody {
+        font-size: 13px;
+        width: 100%;
+        margin: 0;
+        select {
+            @include crossBrowser(border-radius, 12px);
+            color: #ccc;
+        }
+    }
+    .bigBody {
+        font-size: 18px;
+        width: 100%;
+        margin: 0;
+        
+    }
+}
+
+.royalBlue {
+    .handHead {
+        background: #4372B8;
+    }
+    .handBody {
+        border: 1px solid #4372B8;
+    }
+}
+
+.sky {
+    .handHead {
+        background: #109BF8;
+    }
+    .handBody {
+        border: 1px solid #109BF8;
+    }
+}
+
+
+.orange {
+    .handHead {
+        background: #FFA200;
+    }
+    .handBody {
+        border: 1px solid #FFA200;
+    }
+    button {
+        background: #FFA200;
+        color: #fff;
+        margin-top: 20px;
+    }
+}
+
+.superGreen {
+    .handHead {
+        background: #40B549;
+    }
+    .handBody {
+        border: 1px solid #40B549;
+        text-align: left;
+        p {
+            border-left: 2px solid #40B549;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+    }
+}
+
+.water {
+    .handHead {
+        background: #60D4C4;
+    }
+    .handBody {
+        border: 1px solid #60D4C4;
+    }
+}
+
+
+
+.login {
+
+    margin-top: -20vh;
+
+}
+
+ .indexFlood {
+     height: 30vh;
+ }
+
+
+
+    .login {
+        .col-md-4 {
+            padding: 0;
+
+            h3 {
+
+                color: #fff;
+    
+                color: var(--pure-white);
+    
+                width: 100%;
+    
+                text-align: center;
+    
+                margin-bottom: 20px;
+    
+            }
+            form {
+
+                background: #fff;
+    
+                background: var(--pure-white);
+    
+                padding: 40px 35px;
+
+                button {
+
+                    background: linear-gradient(to right, #124692 0%, #40B549 100%);
+    
+                }
+                p {
+
+                    width: 100%;
+    
+                    text-align: center;
+    
+                    margin-top: 15px;
+                    a {
+
+                        text-decoration: none;
+    
+                        color: #bbb;
+    
+                        font-size: 12px;
+    
+                    }
+    
+                }
+    
+            }
+        }
+
+    }
+
+
+
+
+
+.draTab {
+    .col-md-4 {
+        .list-group {
+            a {
+                background: transparent;
+                border: none;
+                color: #ccc;
+                @include crossBrowser(border-radius, 0px);
+                border-left: 2px solid #ccc;
+
+                &.active {
+                    @include var(color, formBtncolor);
+                    border-left: 2px solid #05923E;
+                }
+            }
+        }
+    }
+    .col-md-8 {
+        background: #fff;
+        border: 1px solid #ebebf2;
+
+        .col-md-10 {
+            padding: 20px;
+        }
+    }
+}
+
+.col-md-8.formUp {
+    background: #eee;
+    border: 2px dashed #ccc;
+    padding: 25px;
+    text-align: center;
+
+    input {
+        width: 60%;
+        margin-left: 20%;
+        background: transparent;
+    }
+    p {
+        i {
+            font-size: 9px;
+        }
+    }
+}
+
+
+
+.disk {
+    border: 1px solid #ebebf2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .wrap {
+        width: 100%;
+        height: 130px;
+
+        &:hover {
+            .clos {
+                display: block;
+            }
+        }
+
+        .clos {
+            background: rgba(153, 153, 153, 0.8);
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            padding-top: 30px;
+            display: none;
+
+            p {
+                font-size: 9px;
+                color: #fff;
+                text-align: center;
+            }
+            i {
+                float: left;
+                width: 50%;
+                color: #fff;
+                text-align: center;
+                font-size: 22px;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+
+
+.fly {
+    padding: 50px;
+    font-size: 14px;
+    padding-top: 10px;
+
+    .col-md-4 {
+        color: #4a4a4a;
+    }
+    .col-md-6 {
+        color: #ccc;
+        margin-bottom: 7px;
+    }
+}
+
+
+.neddy {
+    .form-control {
+        background: transparent;
+        border: 1px solid #d2d2d2; 
+    }
+}
+
+label.main {
+    @include var(color, color3);
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+
+.comments {
+    margin-top: 50px;
+    label {
+        @include var(color, color3);
+        font-size: 16px;
+
+    }
+    textarea {
+        height: 150px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+.static {
+    padding-top: 30px;
+    font-size: 14px;
+    .col-md-3 {
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+    .col-md-4 {
+        font-style: italic;
+        padding-bottom: 10px;
+    }
+    .col-md-5 {
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+    .col-md-7 {
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+}
+
+
+.msgTab {
+    margin-top: 20px;
+    .head {
+        padding: 0px;
+        i {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            float: left;
+        }
+        span {
+            padding: 8px;
+            float: left;
+        }
+    }
+    .oblig {
+        padding: 0px;
+        height:0px;
+        overflow-y: hidden;
+    }
+
+    &.inbox {
+        .head {
+            background-color: rgba(255, 162, 0, 0.1);
+            i {
+                background-color: #ffa200;
+            }
+        }
+        .oblig {
+            border: 1px solid #ffa200;
+        }
+    }
+
+    &.outbox {
+        .head {
+            background-color: rgba(7, 125, 190, 0.1);
+            i {
+                background-color: #077dbe;
+            }
+        }
+        .oblig {
+            border: 1px solid #077dbe;
+        }
+    }
+
+    &.popOpen {
+        .oblig {
+            padding: 10px;
+            height: auto;
+        }
+    }
+}
+
+.analyze {
+    padding: 10px 20px;
+}
+
+
+.sam1 {
+    .col-md-5 {
+        border: solid 1px rgba(67, 114, 184, 0.12);
+        font-weight: bold;
+        padding: 10px;
+    }
+    .col-md-7 {
+        background-color: rgba(67, 114, 184, 0.12);
+        padding: 10px;
+    }
+}
+
+
+button.prop {
+    font-size: 13px;
+    padding: 10px !important;
+    margin-right: 20px;
+    float: right;
+    height: 33px !important;
+    padding-top: 10px;
+}
+
+
+.stage {
+    margin-bottom: 7px;
+    .stageHead {
+        
+        @include var(color, pure-white);
+        
+        padding-left: 0px;
+        i {
+            width: 40px;
+            text-align: center;
+            background: #fff;
+            @include var(color, color3);
+            float: left;
+            padding: 4px;
+        }
+        span.stage-left {
+            margin-left: 15px;
+        }
+        span.stage-right {
+            
+        }
+    }
+    .stageBody {
+        display: none;
+        background: rgba(232, 232, 232, 0.43);
+        p {
+            color: #000;
+            padding: 10px;
+        }
+    }
+    &.show {
+        .stageBody {
+            display: block;
+        }
+    }
+}
+
+.uploadBox {
+    height: 270px;
+    border: 1px dashed #ccc;
+    padding: 50px;
+    i {
+        color: #d2d2d2;
+        font-size: 20px;
+    }
+    p {
+        font-size: 13px;
+    }
+}
+
+.uploads {
+    margin-bottom: 5px;
+    .round {
+        float: left;
+        @include square(40px);
+        border: 2px solid #077DBE;
+        @include var(color, color3);
+        padding: 10px 5px;
+        font-size: 11px;
+        @include crossBrowser(border-radius, 50%);
+        margin-right: 20px;
+    }
+
+
+    span {
+        float: left;
+        p {
+            padding: 0px;
+            margin: 0px;
+            font-weight: bold;
+        }
+        sup {
+            color: #d8d8d8;
+            font-size: 10px;
+        }
+    }
+    i {
+        font-size: 20px;
+    }
+}
+
+i.putout {
+    @include var(color, pure-white);
+    font-size: 30px;
+    display: none;
+}
+
+
+
+//medias 
+
+@include mQ(768px) {
+    .menuTab {
+        margin-left: -100%;
+        @include crossBrowser(transition, all 0.5s ease-out);
+
+        &.showed {
+            margin-left: 0%;
+        }
+    }
+    .menuTab {
+
+        nav {
+            margin-left: -100%;
+            @include crossBrowser(transition, all 0.5s ease-out);
+        }
+
+        &.showed {
+            nav {
+                margin-left: 0%;
+            }
+        }
+    }
+
+    i.putout {
+        display: block;
+    }
+
+    .navbar {
+        &.mishtab2 {
+            ul {
+                li {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@include mQ(575px) {
+    .container.first {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+

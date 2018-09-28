@@ -40,6 +40,9 @@
                     <a href="#" class="navbar-brand">
                       <img src="img/logo.png" style="height: 35px;margin: auto;" alt="">
                     </a>
+
+
+                    <i class="putout fa fa-close float-right text-dark"></i>
                     
                               
                     
@@ -90,33 +93,29 @@
 
 
 
-
                   <li class="list-group-item drops">
-                     <div class="purse">
-                        <i class="fa fa-percent"></i> Proposals
-                     </div>
-  
-                        <ul class="dropped">
-                            
-                            <li>
-                              <a href="proposals">
-                                  <span class="dot"></span> Proposals
-                              </a>
-                            </li>
+                    <div class="purse">
+                       <i class="fa fa-archive"></i> Collaterals 
+                    </div>
 
-                            <li>
-                              <a href="analyzeproposals">
-                                  <span class="dot"></span> Analyze Proposals
-                              </a>
-                            </li>
+                    <ul class="dropped">
+                        <li>
+                           <a href="allcollateral">
+                              <span class="dot"></span> All Collateral
+                           </a>
+                        </li>
 
-                        </ul>
-
+                        <li>
+                            <a href="collateral_release">
+                               <span class="dot"></span> Collateral Release
+                            </a>
+                        </li>
+                    </ul>
                   </li>
 
 
 
-                  <li class="list-group-item drops">
+                    <li class="list-group-item drops">
                      <div class="purse">
                         <i class="material-icons">group</i> DRAs
                      </div>
@@ -150,6 +149,108 @@
 
 
                   <li class="list-group-item drops">
+                     <div class="purse">
+                        <i class="fa fa-percent"></i> Proposals
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="proposals">
+                                  <span class="dot"></span> Proposals
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="analyzeproposals">
+                                  <span class="dot"></span> Analyze Proposals
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
+
+                  <li class="list-group-item drops">
+                     <div class="purse">
+                        <i class="fa fa-credit-card"></i> Recoveries
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="recentrecoveries">
+                                  <span class="dot"></span> Recent Recoveries
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="allrecoveries">
+                                  <span class="dot"></span> All Recoveries
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="updatepayments">
+                                  <span class="dot"></span> Update Payment
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
+
+
+                  <li class="list-group-item drops">
+                     <div class="purse">
+                        <i class="fa fa-legal"></i> Legal
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="legal_incoming">
+                                  <span class="dot"></span> Incoming
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="litigation_accounts">
+                                  <span class="dot"></span> Litigation accounts
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="legal_update">
+                                  <span class="dot"></span> Updates
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="legal_summary">
+                                  <span class="dot"></span> Summary
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
+                  
+
+
+
+
+
+                  <li class="list-group-item drops">
                     <div class="purse">
                         <i class="material-icons">description</i> Reporting
                     </div>
@@ -170,7 +271,7 @@
 
                   <li class="list-group-item drops">
                      <div class="purse">
-                        <i class="material-icons">featured_play_list</i> Projects
+                        <i class="fa fa-archive"></i> Projects
                      </div>
   
                         <ul class="dropped">
@@ -304,6 +405,9 @@
                 <nav class="navbar navbar-expand-lg navbar-light mishtab2 fixed-top">
 
 
+                        <i class="putout fa fa-bars">
+
+                        </i>
 
                         
                         <ul class="navbar-nav mr-auto my-2 my-lg-0">
@@ -321,10 +425,6 @@
 
                           <ul class="navbar-nav mt-2 mt-lg-0">
 
-                              <li class="nav-item mynav">
-                                <a class="nav-link" href="#"><i class="material-icons">notifications</i></a>
-                              </li>
-                            
                               <li class="nav-item mynav dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   DRA Manager
