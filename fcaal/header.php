@@ -244,6 +244,31 @@
 
 
 
+                  <li class="list-group-item drops">
+                     <div class="purse">
+                        <i class="fa fa-users"></i> Accounts
+                     </div>
+  
+                        <ul class="dropped">
+                            
+                            <li>
+                              <a href="obligorfinancials">
+                                  <span class="dot"></span> Obligor Financials
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="#">
+                                  <span class="dot"></span> Other
+                              </a>
+                            </li>
+
+                        </ul>
+
+                  </li>
+
+
+
                   
 
 
