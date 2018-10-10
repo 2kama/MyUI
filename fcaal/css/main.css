@@ -1046,7 +1046,8 @@ button.prop {
   padding: 50px; }
   .uploadBox i {
     color: #d2d2d2;
-    font-size: 20px; }
+    font-size: 20px;
+    margin-left: 30%; }
   .uploadBox p {
     font-size: 13px; }
 
@@ -1082,6 +1083,55 @@ i.putout {
   color: var(--pure-white);
   font-size: 30px;
   display: none; }
+
+.uploadBox2 {
+  background: #fff;
+  border: 2px dashed #aaa;
+  padding: 40px;
+  text-align: center; }
+  .uploadBox2 i {
+    width: 100%;
+    float: left;
+    color: #aaa;
+    font-size: 20px; }
+  .uploadBox2 p {
+    font-size: 17px;
+    width: 100%;
+    color: #4a4a4a;
+    margin-top: 30px; }
+
+.headss {
+  margin-top: 50px; }
+
+.uploadsBlock {
+  border: 1px solid #85aeec;
+  background: #fff;
+  margin-bottom: 15px; }
+  .uploadsBlock .col-md-4 {
+    padding: 20px; }
+    .uploadsBlock .col-md-4 span {
+      font-weight: bold;
+      font-size: 13px;
+      width: 100%;
+      float: left; }
+    .uploadsBlock .col-md-4 sup {
+      font-size: 10px;
+      color: #aaa; }
+  .uploadsBlock .col-md-6 {
+    background: rgba(67, 114, 184, 0.12);
+    padding: 20px; }
+    .uploadsBlock .col-md-6 p {
+      font-size: 13px;
+      font-weight: bold; }
+  .uploadsBlock .col-md-2 {
+    padding: 20px; }
+    .uploadsBlock .col-md-2 i {
+      padding: 7px;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      border: 1px solid #aaa;
+      margin-right: 10px; }
 
 @media screen and (max-width: 768px) {
   .menuTab {
