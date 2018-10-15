@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
    
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
      <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/animate.css">
      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -448,16 +450,19 @@
                         
 
 
-                          <ul class="navbar-nav mt-2 mt-lg-0">
+                          <ul class="saga mt-2 mt-lg-0" id="saga">
 
-                              <li class="nav-item mynav dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  DRA Manager
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  something will be here
-                                </div>
-                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link notynoty" href="javascript:;"><i class="fa fa-bell"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link msgmsg" href="javascript:;"><i class="fa fa-envelope"></i></a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link linklink" href="javascript:;"><i class="fa fa-user"></i> Super Admin</a>
+                                </li>
                             
                           </ul>
 
@@ -472,7 +477,113 @@
      
 
 
+                    <div class="col-md-3 col-sm-6 poppingUp notyBox opened">
+                        <div class="col-md-12 popHead">Notification</div>
+                        <div class="row temp">
+                            
+                            <div class="col-md-12 slab stack">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
 
+
+                            <div class="col-md-12 slab stack">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">bubble_chart</i>
+                                <span>
+                                    <a href=""><strong>New DRA proposal</strong></a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 poppingUp msgBox opened">
+                    <div class="col-md-12 popHead">Messages</div>
+                        <div class="row temp">
+                            
+                            <div class="col-md-12 slab stack">
+                                <i class="material-icons">redo</i>
+                                <span>
+                                    <a href=""><strong>Transworld Recovery Services Ltd</strong> Sent a proposal request.</a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+                            <div class="col-md-12 slab stack">
+                                <i class="material-icons">redo</i>
+                                <span>
+                                    <a href=""><strong>Transworld Recovery Services Ltd</strong> Sent a proposal request.</a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">redo</i>
+                                <span>
+                                    <a href=""><strong>Transworld Recovery Services Ltd</strong> Sent a proposal request.</a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+
+
+                            <div class="col-md-12 slab">
+                                <i class="material-icons">redo</i>
+                                <span>
+                                    <a href=""><strong>Transworld Recovery Services Ltd</strong> Sent a proposal request.</a>
+                                    <p>23 mins ago</p>
+                                </span>
+                            </div>
+                        
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 col-sm-4 col-3 poppingUp menuBox opened">
+                        <a href="#">Logout</a>
+                    </div>
 
 
 
